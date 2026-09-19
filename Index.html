@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Egrégora Noctis — Satanás, Lilith e Lúcifer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #050505;
+      color: #eee;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    /* ===== MENU ===== */
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(0,0,0,0.92);
+      border-bottom: 1px solid #650000;
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #b30000;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #d00000;
+    }
+
+    /* ===== HERO ===== */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+
+      background:
+        radial-gradient(circle at center,
+        rgba(120,0,0,.25),
+        transparent 45%),
+        linear-gradient(#080000, #050505 70%);
+    }
+
+    .pentagram {
+      font-size: 100px;
+      color: #a90000;
+      text-shadow:
+        0 0 15px #700000,
+        0 0 35px #350000;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 9vw, 90px);
+      letter-spacing: 8px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      color: #a90000;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto;
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 30px;
+      border: 1px solid #9d0000;
+      color: white;
+      text-decoration: none;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #9d0000;
+      box-shadow: 0 0 20px #600000;
+    }
+
+    /* ===== SEÇÕES ===== */
+
+    section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .title span {
+      color: #a90000;
+      font-size: 15px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .title h2 {
+      font-size: 42px;
+      margin-top: 8px;
+    }
+
+    .title p {
+      color: #888;
+      margin-top: 10px;
+    }
+
+    /* ===== INTRO ===== */
+
+    .intro {
+      background: #080808;
+    }
+
+    .intro-text {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #bbb;
+      font-size: 18px;
+    }
+
+    /* ===== ENTIDADES ===== */
+
+    .entities {
+      background: #050505;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #120000, #090909);
+      border: 1px solid #400000;
+      padding: 35px 25px;
+      text-align: center;
+      transition: .4s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: #c00000;
+      transition: .4s;
+    }
+
+    .card:hover::before {
+      left: 0;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #900000;
+      box-shadow: 0 10px 30px rgba(120,0,0,.2);
+    }
+
+    .symbol {
+      font-size: 60px;
+      color: #b00000;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #999;
+      font-size: 15px;
+    }
+
+    /* ===== HISTÓRIA ===== */
+
+    .history {
+      background: #0a0000;
+    }
+
+    .history-box {
+      border-left: 2px solid #800000;
+      padding-left: 30px;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .history-item {
+      margin-bottom: 45px;
+    }
+
+    .history-item h3 {
+      color: #c00000;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .history-item p {
+      color: #aaa;
+    }
+
+    /* ===== SÍMBOLOS ===== */
+
+    .symbols {
+      background: #050505;
+    }
+
+    .symbol-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .symbol-box {
+      border: 1px solid #320000;
+      padding: 30px 15px;
+      background: #090909;
+    }
+
+    .symbol-box strong {
+      display: block;
+      color: #b40000;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .symbol-box span {
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* ===== FILOSOFIA ===== */
+
+    .philosophy {
+      background:
+        radial-gradient(circle,
+        rgba(100,0,0,.15),
+        transparent 60%),
+        #070707;
+      text-align: center;
+    }
+
+    blockquote {
+      max-width: 800px;
+      margin: auto;
+      font-size: 28px;
+      font-style: italic;
+      color: #ddd;
+    }
+
+    blockquote::before {
+      content: "“";
+      color: #a00000;
+      font-size: 70px;
+      display: block;
+      height: 45px;
+    }
+
+    /* ===== FOOTER ===== */
+
+    footer {
+      background: #020202;
+      border-top: 1px solid #400000;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    footer .mark {
+      font-size: 35px;
+      color: #a00000;
+      margin-bottom: 10px;
+    }
+
+    footer h3 {
+      letter-spacing: 4px;
+      color: #ddd;
+    }
+
+    footer p {
+      color: #666;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    /* ===== RESPONSIVO ===== */
+
+    @media (max-width: 800px) {
+
+      nav ul {
+        display: none;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .symbol-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        letter-spacing: 3px;
+      }
+
+      blockquote {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 450px) {
+
+      .symbol-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 18px;
+      }
+    }
+
+    /* botão voltar ao topo */
+
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      border: 1px solid #800000;
+      background: #090909;
+      color: #c00000;
+      display: none;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    #topBtn:hover {
+      background: #800000;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MENU -->
+
+  <header>
+    <nav>
+
+      <div class="logo">
+        NOCTIS
+      </div>
+
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#entidades">Entidades</a></li>
+        <li><a href="#simbolos">Símbolos</a></li>
+        <li><a href="#filosofia">Filosofia</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero" id="inicio">
+
+    <div>
+
+      <div class="pentagram">
+        ⛤
+      </div>
+
+      <h1>
+        Egrégora <span>Noctis</span>
+      </h1>
+
+      <p>
+        Uma jornada pela simbologia, história e filosofia associada
+        a Satanás, Lilith e Lúcifer.
+      </p>
+
+      <a href="#historia" class="btn">
+        Entrar no conhecimento
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRODUÇÃO -->
+
+  <section class="intro">
+
+    <div class="container">
+
+      <div class="title">
+        <span>O conhecimento</span>
+        <h2>Além dos símbolos</h2>
+      </div>
+
+      <p class="intro-text">
+
+        Ao longo da história, diferentes culturas, religiões e tradições
+        esotéricas construíram interpretações distintas sobre figuras
+        como Satanás, Lilith e Lúcifer.
+
+        <br><br>
+
+        Este espaço apresenta essas figuras como objetos de estudo
+        simbólico, religioso, mitológico e filosófico. As interpretações
+        apresentadas não representam uma única tradição universal.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ENTIDADES -->
+
+  <section class="entities" id="entidades">
+
+    <div class="container">
+
+      <div class="title">
+
+        <span>Três arquétipos</span>
+
+        <h2>As Figuras da Noctis</h2>
+
+        <p>
+          Símbolos que receberam diferentes significados ao longo dos séculos.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <!-- SATANÁS -->
+
+        <article class="card">
+
+          <div class="symbol">
+            ♄
+          </div>
+
+          <h3>Satanás</h3>
+
+          <p>
+
+            O termo Satanás possui uma história complexa.
+            Em contextos antigos, a palavra hebraica
+            <em>śāṭān</em> pode estar relacionada à ideia de
+            adversário ou acusador.
+
+            <br><br>
+
+            Em tradições posteriores, especialmente no imaginário
+            cristão medieval, Satanás passou a ser associado à figura
+            do grande adversário de Deus.
+
+            <br><br>
+
+            No satanismo moderno, diferentes grupos reinterpretam
+            Satanás de maneiras distintas, incluindo como símbolo
+            de individualidade, oposição e liberdade.
+
+          </p>
+
+        </article>
+
+
+        <!-- LILITH -->
+
+        <article class="card">
+
+          <div class="symbol">
+            ☾
+          </div>
+
+          <h3>Lilith</h3>
+
+          <p>
+
+            Lilith aparece em diferentes tradições e textos do
+            antigo Oriente Próximo.
+
+            <br><br>
+
+            Sua representação ganhou novas formas na literatura
+            judaica medieval, especialmente em textos e folclores
+            posteriores.
+
+            <br><br>
+
+            Na cultura contemporânea, Lilith frequentemente é
+            interpretada como símbolo de independência,
+            autonomia e resistência à submissão.
+
+          </p>
+
+        </article>
+
+
+        <!-- LÚCIFER -->
+
+        <article class="card">
+
+          <div class="symbol">
+            ☉
+          </div>
+
+          <h3>Lúcifer</h3>
+
+          <p>
+
+            Lúcifer significa literalmente algo relacionado a
+            “portador da luz” em latim.
+
+            <br><br>
+
+            O termo possui uma história ligada à tradução latina
+            de textos bíblicos e posteriormente foi associado,
+            em tradições cristãs, à figura de Satanás.
+
+            <br><br>
+
+            Em correntes esotéricas e luciferianas modernas,
+            Lúcifer pode representar conhecimento, iluminação,
+            questionamento e busca intelectual.
+
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HISTÓRIA -->
+
+  <section class="history" id="historia">
+
+    <div class="container">
+
+      <div class="title">
+
+        <span>Uma jornada através do tempo</span>
+
+        <h2>História e Transformação</h2>
+
+      </div>
+
+
+      <div class="history-box">
+
+
+        <div class="history-item">
+
+          <h3>I — Antiguidade</h3>
+
+          <p>
+
+            Muitas das figuras posteriormente relacionadas ao
+            imaginário demonológico possuem antecedentes em culturas
+            antigas do Oriente Próximo.
+
+            Divindades, espíritos e seres considerados perigosos
+            podiam representar forças desconhecidas da natureza,
+            da noite ou do mundo espiritual.
+
+          </p>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <h3>II — Tradições Judaicas</h3>
+
+          <p>
+
+            O desenvolvimento da literatura judaica produziu
+            diferentes conceitos sobre adversários, espíritos e
+            entidades sobrenaturais.
+
+            Lilith, por exemplo, adquiriu características próprias
+            em tradições folclóricas posteriores.
+
+          </p>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <h3>III — Cristianismo Medieval</h3>
+
+          <p>
+
+            Durante a Idade Média, diferentes figuras e símbolos
+            foram incorporados a uma visão cristã do demônio.
+
+            Satanás, Lúcifer e outras figuras passaram a ser
+            relacionados dentro de sistemas teológicos e artísticos
+            que influenciaram profundamente a cultura ocidental.
+
+          </p>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <h3>IV — Esoterismo Moderno</h3>
+
+          <p>
+
+            A partir da modernidade, escritores, ocultistas e
+            movimentos religiosos passaram a reinterpretar essas
+            figuras.
+
+            Surgiram leituras que deixaram de enxergá-las apenas
+            como personagens malignos e passaram a utilizá-las
+            como símbolos filosóficos.
+
+          </p>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <h3>V — Satanismo Contemporâneo</h3>
+
+          <p>
+
+            O satanismo contemporâneo não constitui uma única
+            tradição. Existem correntes diferentes, com crenças,
+            práticas e interpretações próprias.
+
+            Algumas utilizam Satanás de maneira simbólica;
+            outras possuem concepções teístas.
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SÍMBOLOS -->
+
+  <section class="symbols" id="simbolos">
+
+    <div class="container">
+
+      <div class="title">
+
+        <span>Iconografia</span>
+
+        <h2>Símbolos</h2>
+
+      </div>
+
+
+      <div class="symbol-grid">
+
+        <div class="symbol-box">
+          <strong>⛤</strong>
+          <span>Pentagrama invertido</span>
+        </div>
+
+        <div class="symbol-box">
+          <strong>☾</strong>
+          <span>Lua — associações simbólicas a Lilith</span>
+        </div>
+
+        <div class="symbol-box">
+          <strong>♄</strong>
+          <span>Saturno — símbolo presente em diferentes tradições ocultistas</span>
+        </div>
+
+        <div class="symbol-box">
+          <strong>☉</strong>
+          <span>Sol — luz, conhecimento e iluminação</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FILOSOFIA -->
+
+  <section class="philosophy" id="filosofia">
+
+    <div class="container">
+
+      <div class="title">
+
+        <span>Reflexão</span>
+
+        <h2>Filosofia Noctis</h2>
+
+      </div>
+
+
+      <blockquote>
+
+        Conhecer um símbolo não significa simplesmente
+        adorá-lo ou rejeitá-lo.
+
+        Significa perguntar o que ele representa,
+        por que surgiu e o que a humanidade enxergou
+        nele através dos séculos.
+
+      </blockquote>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="mark">
+      ⛤
+    </div>
+
+    <h3>EGRÉGORA NOCTIS</h3>
+
+    <p>
+      Conhecimento • Filosofia • Simbolismo
+    </p>
+
+    <p>
+      Criado pela Egrégora Noctis
+    </p>
+
+    <p>
+      © 2026 Egrégora Noctis
+    </p>
+
+  </footer>
+
+
+  <!-- BOTÃO TOPO -->
+
+  <button id="topBtn" onclick="voltarTopo()">
+    ↑
+  </button>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    const topBtn = document.getElementById("topBtn");
+
+    window.addEventListener("scroll", function() {
+
+      if (window.scrollY > 400) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+
+    });
+
+
+    function voltarTopo() {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+
+
+    // efeito suave nas entradas das seções
+
+    const cards = document.querySelectorAll(".card");
+
+    const observer = new IntersectionObserver(
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+
+    cards.forEach(card => {
+
+      card.style.opacity = "0";
+      card.style.transform = "translateY(30px)";
+      card.style.transition = "opacity .7s ease, transform .7s ease";
+
+      observer.observe(card);
+
+    });
+
+  </script>
+
+</body>
+</html>
